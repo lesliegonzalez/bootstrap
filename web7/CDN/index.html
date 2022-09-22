@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- 3 columnas idénticas usando col -->
@@ -14,13 +15,15 @@
         <div class="col border border-secondary">column</div>
         <div class="col border border-danger">column</div>
       </div>
-    </div>
+    </div> 
     <!--3 columnas usando col 4 -->
     <div class="container texte-center my-5">
       <div class="row">
         <div class="col-4 border border-primary">col- 4</div>
         <div class="col-4 border border-secondary">col- 4</div>
         <div class="col-4 border border-danger">col- 4</div>
+      </div>
+    </div>
     <!-- 2 columnas idénticas y una desigual -->
     <div class="container texte-center my-5">
       <div class="row">
@@ -28,6 +31,7 @@
         <div class="col-8 border border-secondary">col- 8</div>
         <div class="col-2 border border-danger">col- 2</div>
       </div>
+    </div>
     <!-- 2 columnas idénticas y una desigual con breakpoints -->  
     <div class="container texte-center my-5">
       <div class="row">
@@ -35,18 +39,45 @@
         <div class="col-md-8 border border-secondary">col- 8</div>
         <div class="col-md-2 border border-danger">col- 2</div>
       </div>
+    </div>
     <!-- 2 columnas idénticas y una desigual con 2 breakpoints -->  
     <div class="container texte-center my-5">
       <div class="row">
-        <div class="col-md-2 col-sm-4 border border-primary">md-2-sm-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deleniti minus reprehenderit aliquid reiciendis sequi expedita quibusdam unde aut eius! Dolores facilis odio obcaecati eligendi adipisci ducimus iste porro quaerat!</div>
-        <div class="col-md-8 col-sm-8 border border-secondary">md-8-sm-8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eos accusamus temporibus est iure, aspernatur ut laboriosam voluptates, ab, doloremque aperiam! Voluptas dolor ipsum temporibus, atque veritatis vel harum odio.
-        </div>
-        <div class="col-md-2 col-sm-12 border border-danger">md-2-sm-12 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dolor cum, placeat corporis error quidem quasi doloremque laborum. Vel earum quo, fugiat dolores amet officiis explicabo quos esse odit quidem.
-        Ut animi sequi architecto modi non omnis, commodi dicta quos distinctio, quia pariatur enim, harum facilis? Iste possimus dolorum totam explicabo cumque, ipsa rerum fuga quo mollitia laudantium! Voluptas, id?</div>
+        <div class="col-md-2 col-sm-4 border border-primary">md-2-sm-4</div>
+        <div class="col-md-8 col-sm-8 border border-secondary">md-8-sm-8</div>
+        <div class="col-md-2 col-sm-12 border border-danger">md-2-sm-12</div>
       </div>
     </div>
-    
-    
+    <!-- 2 columnas idénticas y una desigual con 2 breakpoints y fila con min de altura -->  
+    <div class="container texte-center my-5">
+      <div class="row altura-min">
+        <div class="col-md-2 col-sm-4 align-self-start border border-primary altura-col">md-2-sm-4</div>
+        <div class="col-md-8 col-sm-8 align-self-center border border-secondary altura-col">md-8-sm-8</div>
+        <div class="col-md-2 col-sm-12 align-self-end border border-danger altura-col">md-2-sm-12</div>
+      </div>
+    </div>
+    <!-- 2 columnas diferentes, con fila justificada -->  
+    <div class="container texte-center my-5">
+      <div class="row justify-content-end">
+        <div class="col-md-2 border border-primary">md-2</div>
+        <div class="col-md-6 border border-secondary">md-6</div>
+      </div>
+    </div>
+    <!-- Grid complejo -->
+    <div class="container-fluid text-center my-5">
+      <div class="row">
+          <div class="col-md-6 border border-primary">
+          <div class="row">
+              <div class="col-md-12 border border-secondary">col1</div>
+              <div class="col-md-12 border border-secondary">col2</div>
+          </div>
+      </div>
+          <div class="col-md-3 border border-secondary">md-3</div>
+          <div class="col-md-3 border border-secondary">md-3</div>
+      </div>
+  </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
